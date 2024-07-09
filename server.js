@@ -8,7 +8,6 @@ require('dotenv').config();
 const http = require('http');
 const { Server } = require('socket.io');
 
-// Load environment variables from .env
 
 const app = express();
 const port = 3001;
