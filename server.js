@@ -21,7 +21,7 @@ axiosRetry(axios, { retries: 5, retryDelay: exponentialDelay }); // Retry on net
 
 
 app.post('/trigger-workflow', async (req, res) => {
-  const { imageName, repoUrl, desiredDirectory } = req.body;
+  const { imageNameModified : imageName, repoUrl, desiredDirectory } = req.body;
   const token = process.env.TOKEN;
   const owner = process.env.OWNER;
   const repo = process.env.REPO;
