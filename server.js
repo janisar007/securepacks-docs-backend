@@ -69,7 +69,7 @@ app.post('/trigger-workflow', async (req, res) => {
       } catch (error) {
         console.error('Error fetching latest workflow run:', error.response ? error.response.data : error.message);
       }
-    }, 5000); // 5000 milliseconds = 5 seconds
+    }, 5000);
 
     res.json({ message: 'GitHub Action triggered successfully!',latestWorkflowRunId:latestId });
   } catch (error) {
